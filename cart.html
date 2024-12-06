@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeLip - Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LuxeLip</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-list"></div>
+            <div>
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <p>VAT (7.5%): $<span id="vat">0.00</span></p>
+                <p>Total: $<span id="total">0.00</span></p>
+            </div>
+            <button onclick="window.location.href='payment.html'">Proceed to Payment</button>
+        </section>
+    </main>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
